@@ -1,7 +1,12 @@
 footer {
-  display: flex;
-  height: 15vh;
+  height: 10vh;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media screen and (max-width: 576px) {
+  footer {
+    margin: 9100px 0px;
+  }
 }

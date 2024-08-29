@@ -35,7 +35,7 @@ header img {
   width: 40px;
   cursor: pointer;
 }
-s d header .icon {
+header .icon {
   filter: contrast(30%);
 }
 
@@ -44,4 +44,13 @@ header .profileimg {
   height: 40px;
   width: 40px;
   cursor: pointer;
+}
+@media screen and (max-width: 590px) {
+  .profileimg {
+    display: none;
+  }
+}
+@media screen and (max-width: 400px) {
+}
+@media screen and (max-width: 400px) {
 }

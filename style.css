@@ -82,3 +82,9 @@ h3 {
 p {
   color: var(--tp3-logo);
 }
+
+@media screen and (max-width: 576px) {
+  body {
+    height: 800vh;
+  }
+}

@@ -3,7 +3,7 @@ import './header.css';
 const headerTemplate = () => {
   return `
      <img src="https://res.cloudinary.com/dvoady6dt/image/upload/v1722672476/Poyectos3_Pinterest/ee0aqe8qbhswcydudfkz.png" alt="icono pinteres class="vueltainicio" id="vueltainicio" >
-  <input type="text" placeholder="Search" id="searchinput"/>
+  <input type="text" placeholder="Buscar" id="searchinput"/>
   <button id="searchbtn"><img src="https://res.cloudinary.com/dvoady6dt/image/upload/v1722846168/Poyectos3_Pinterest/ervzz25jwmpzjnryqazs.png" alt="Search icon"/></button>
   <button id="darkmodebtn"><img src="/icons/dark.png" alt="Dark mode icon"/ id="darkmodeicon"></button>
   <img
