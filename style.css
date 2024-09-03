@@ -46,6 +46,7 @@ body {
   background-color: var(--tp3-color-background);
   color: var(--tp3-primary);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 100%;
 }
 
 .dark {
@@ -87,3 +88,8 @@ p {
     width: 35vh;
   }
 }
+/* @media screen and (min-width: 1200px) {
+  body {
+    width: 100%;
+  }
+} */

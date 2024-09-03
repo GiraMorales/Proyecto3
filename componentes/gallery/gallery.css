@@ -24,9 +24,9 @@
   padding: 1rem;
   height: 100%;
   width: 100%;
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-between; */
   backdrop-filter: brightness(50%) blur(3px);
   display: none;
 }
@@ -74,6 +74,7 @@
 .gallery-item .links img {
   width: 25px;
   height: 25px;
+  object-fit: cover;
 }
 
 .gallery-item .links div {
@@ -99,7 +100,8 @@
 }
 
 .gallery-item:nth-child(2) {
-  grid-column: span 2;
+  grid-column: span 1;
+  /* grid-row: sapn 2; */
 }
 .gallery-item:nth-child(4) {
   grid-row: span 2;
@@ -115,6 +117,7 @@
 
 .gallery-item:nth-child(10) {
   grid-column: span 2;
+  /* grid-row: sapn 1; */
 }
 
 .gallery-item:nth-child(12) {
@@ -128,24 +131,25 @@
 }
 .gallery-item:nth-child(18) {
   grid-column: span 2;
+  /* grid-row: sapn 1; */
 }
 .gallery-item:nth-child(20) {
-  grid-row: span 2;
+  grid-row: span 1;
 }
 .gallery-item:nth-child(22) {
   grid-column: span 2;
 }
 .gallery-item:nth-child(24) {
-  grid-row: span 2;
+  grid-row: span 1;
 }
 .gallery-item:nth-child(26) {
   grid-column: span 2;
 }
 .gallery-item:nth-child(28) {
-  grid-row: span 2;
+  grid-row: span 1;
 }
 .gallery-item:nth-child(30) {
-  grid-column: span 2;
+  grid-column: span 1;
 }
 
 /* GALLERY STYLES */
@@ -157,33 +161,48 @@
   grid-auto-flow: row dense;
 }
 
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 576px) {
   .gallery {
-    background-position: center;
-    width: 35svh;
+    grid-template-columns: auto;
+    grid-auto-rows: minmax(250px, auto);
   }
 }
 
 @media screen and (min-width: 576px) {
   .gallery {
     grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(300px, auto);
   }
 }
 
 @media screen and (min-width: 768px) {
   .gallery {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 25%);
+    grid-auto-rows: minmax(150px, auto);
+  }
+  .gallery-item:nth-child(2) {
+    grid-row: sapn 2;
+  }
+
+  .gallery-item:nth-child(10) {
+    grid-row: sapn 1;
+  }
+
+  .gallery-item:nth-child(18) {
+    grid-row: sapn 1;
   }
 }
 
 @media screen and (min-width: 992px) {
   .gallery {
-    grid-template-columns: repeat(4, 1fr);
+    /* grid-template-columns: repeat(2, 25%); */
+    grid-auto-rows: minmax(200px, auto);
   }
 }
 
 @media screen and (min-width: 1200px) {
   .gallery {
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(300px, auto);
   }
 }
