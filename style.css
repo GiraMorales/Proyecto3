@@ -83,3 +83,6 @@ h3 {
 p {
   color: var(--tp3-logo);
 }
+main {
+  width: auto;
+}
