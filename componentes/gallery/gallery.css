@@ -164,8 +164,8 @@
 
 @media screen and (max-width: 576px) {
   .gallery {
-    grid-template-columns: auto;
-    grid-auto-rows: minmax(250px, auto);
+    grid-template-columns: repeat(2, 50%);
+    grid-auto-rows: minmax(200px, auto);
   }
 }
 
