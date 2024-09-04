@@ -177,7 +177,7 @@
     width: 25px;
     height: 25px;
     margin: 10% 5%;
-
+  }
 }
 
 @media screen and (min-width: 576px) {
@@ -195,11 +195,9 @@
   .gallery-item:nth-child(2) {
     grid-row: sapn 2;
   }
-
   .gallery-item:nth-child(10) {
     grid-row: sapn 1;
   }
-
   .gallery-item:nth-child(18) {
     grid-row: sapn 1;
   }
