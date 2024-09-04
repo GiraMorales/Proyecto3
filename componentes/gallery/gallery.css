@@ -167,6 +167,17 @@
     grid-template-columns: repeat(2, 50%);
     grid-auto-rows: minmax(200px, auto);
   }
+  .gallery-item .save-btn {
+    justify-content: space-around;
+  }
+  .gallery-item .links {
+    flex-wrap: wrap;
+  }
+  .gallery-item .links-icon {
+    width: 25px;
+    height: 25px;
+    margin: 10% 5%;
+
 }
 
 @media screen and (min-width: 576px) {
